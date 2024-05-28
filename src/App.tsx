@@ -12,7 +12,7 @@ import {
      Certifications,
 } from "./components/pages";
 
-function App() {
+function App(): JSX.Element {
      const { menuIsOpen, toggleMenu, closeMenu, menuRef } = useMenu();
 
      return (

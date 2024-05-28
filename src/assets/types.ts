@@ -83,7 +83,7 @@ export type CertificationItemProps = Certification & {
      showYear: boolean;
 };
 
-export interface HeaderProps extends ToggleMenuProps, CloseMenuProps {}
+export interface HeaderProps extends ToggleMenuProps, Partial<CloseMenuProps> {}
 
 export type MenuProps = HeaderProps & {
      menuRef: React.RefObject<HTMLDivElement>;
