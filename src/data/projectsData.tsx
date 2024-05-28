@@ -1,17 +1,24 @@
 const projects = [
      {
           duration: "2024",
-          name: "henriquepcm.com - v2.0",
+          name: "henriquepcm.com - TypeScript Version",
           description:
-               "This is a rebuilding using React. I used React Router for pagination and a better SEO.",
+               "This is the current version of the website you are in. For this version, I added TypeScript on top of the previous React version.",
           link: "https://henriquepcm.com/",
      },
      {
-          duration: "2023",
-          name: "henriquepcm.com - v1.0",
+          duration: "2024",
+          name: "henriquepcm.com - React Version",
           description:
-               "First version with Vanilla JavaScript and Tailwind CSS. The layout was created by myself using Figma following the mobile-first concept.",
-          link: "https://github.com/henriquepcm/henriquepcm-com",
+               "This is a rebuilding using React. I used React Router for pagination and a better SEO.",
+          link: "https://github.com/henriquepcm/henriquepcmdotcom-react-version",
+     },
+     {
+          duration: "2023",
+          name: "henriquepcm.com - Vanilla JS Version",
+          description:
+               "Original version with Vanilla JavaScript and Tailwind CSS. The layout was created by myself using Figma and following the mobile-First version with Vanilla JavaScript and Tailwind CSS. The layout was created by myself using Figma and following the mobile-first recommendations..",
+          link: "https://github.com/henriquepcm/henriquepcmdotcom-vanilla-javascript-version",
      },
      {
           duration: "2019 - 2020",
