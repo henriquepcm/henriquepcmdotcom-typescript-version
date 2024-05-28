@@ -78,14 +78,18 @@ export interface ProjectItemProps {
      name: string;
 }
 
+export interface HeaderProps {
+     toggleMenu: () => void;
+     closeMenu: () => void;
+}
+
+export interface MenuProps {
+     menuRef: React.RefObject<HTMLDivElement>;
+     menuIsOpen: boolean;
+     toggleMenu: () => void;
+}
+
 //Combined Types
 export type CertificationItemProps = Certification & {
      showYear: boolean;
-};
-
-export interface HeaderProps extends ToggleMenuProps, Partial<CloseMenuProps> {}
-
-export type MenuProps = HeaderProps & {
-     menuRef: React.RefObject<HTMLDivElement>;
-     menuIsOpen: boolean;
 };
