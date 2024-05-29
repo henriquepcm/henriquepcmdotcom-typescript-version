@@ -17,7 +17,7 @@ const projects = [
           duration: "2023",
           name: "henriquepcm.com - Vanilla JS Version",
           description:
-               "Original version with Vanilla JavaScript and Tailwind CSS. The layout was created by myself using Figma and following the mobile-First version with Vanilla JavaScript and Tailwind CSS. The layout was created by myself using Figma and following the mobile-first recommendations..",
+               "Original version with Vanilla JavaScript and Tailwind CSS. The layout was created by myself using Figma and applying the mobile-first concept.",
           link: "https://github.com/henriquepcm/henriquepcmdotcom-vanilla-javascript-version",
      },
      {
