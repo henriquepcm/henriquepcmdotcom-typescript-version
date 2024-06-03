@@ -52,11 +52,11 @@ nav {
 }
 
 .container-home {
-     @apply flex flex-col mt-32 -translate-y-[5rem] text-center;
+     @apply flex flex-col mt-16 text-center;
 }
 
 .container-about {
-     @apply section-regular mt-32 -translate-y-[4rem] justify-center;
+     @apply section-regular mt-32 justify-center;
 }
 
 /* Tailwind CSS classes sets */
