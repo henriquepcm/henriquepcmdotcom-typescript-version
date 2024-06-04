@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/v1/*"
+  to = "https://henriquepcmvjs.netlify.app/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/v2/*"
+  to = "https://henriquepcmrct.netlify.app/:splat"
+  status = 200
