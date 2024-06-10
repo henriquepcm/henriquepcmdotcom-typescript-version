@@ -21,7 +21,4 @@ export default defineConfig({
                plugins: [tailwindcss, autoprefixer],
           },
      },
-     build: {
-          target: "es2015",
-     },
 });
