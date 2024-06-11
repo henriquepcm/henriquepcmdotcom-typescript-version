@@ -1,4 +1,4 @@
-const colleges = [
+const collegesData = [
      {
           duration: "2007 - 2010",
           college: "Universidade do Sul de Santa Catarina",
@@ -11,4 +11,4 @@ const colleges = [
      },
 ];
 
-export default colleges;
+export default collegesData;

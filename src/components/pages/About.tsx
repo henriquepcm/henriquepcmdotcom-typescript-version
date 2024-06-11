@@ -26,9 +26,12 @@ function About(): JSX.Element {
                     <p>
                          Am I a good fit for your project? Feel free to drop me
                          a line at
-                         <span className="font-bold ml-1">
-                              henriquepcm[at]gmail.com
-                         </span>
+                         <a
+                              href="mailto:henriquepcm@gmail.com"
+                              className="font-bold ml-1"
+                         >
+                              henriquepcm@gmail.com
+                         </a>
                          &nbsp;and let's chat about it.
                     </p>
                </div>

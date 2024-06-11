@@ -1,7 +1,7 @@
 import Heading1 from "../ui/Heading1";
 import PageMainContent from "../ui/PageMainContent";
 import TagList from "../ui/TagList";
-import skills from "../../data/skillsData";
+import skillsData from "../../data/skillsData";
 
 function Skills(): JSX.Element {
      return (
@@ -12,19 +12,19 @@ function Skills(): JSX.Element {
                <Heading1 isHome={false}>Skills, Tools and Languages</Heading1>
 
                <span className="mt-5 font-bold">Hard Skills</span>
-               <TagList tags={skills.hardSkills} />
+               <TagList tags={skillsData.hardSkills} />
 
                <span className="mt-5 font-bold">Complementary Skills</span>
-               <TagList tags={skills.compSkills} />
+               <TagList tags={skillsData.compSkills} />
 
                <span className="mt-5 font-bold">Soft Skills</span>
-               <TagList tags={skills.softSkills} />
+               <TagList tags={skillsData.softSkills} />
 
                <span className="mt-5 font-bold">Tools</span>
-               <TagList tags={skills.tools} />
+               <TagList tags={skillsData.tools} />
 
                <span className="mt-5 font-bold">Languages</span>
-               <TagList tags={skills.languages} />
+               <TagList tags={skillsData.languages} />
           </PageMainContent>
      );
 }

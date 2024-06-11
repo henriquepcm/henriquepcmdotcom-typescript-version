@@ -1,4 +1,4 @@
-const skills = {
+const skillsData = {
      hardSkills: ["React", "JavaScript", "CSS", "HTML", "UI/UX Design"],
      softSkills: [
           "Adaptability",
@@ -11,4 +11,4 @@ const skills = {
      languages: ["English-Proficient", "Portuguese-Native"],
 };
 
-export default skills;
+export default skillsData;

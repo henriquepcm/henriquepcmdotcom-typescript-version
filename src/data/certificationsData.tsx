@@ -1,4 +1,4 @@
-const certifications = [
+const certificationsData = [
      {
           year: 2024,
           title: "The Ultimate React Course 2024: React, Redux & More",
@@ -61,4 +61,4 @@ const certifications = [
      },
 ];
 
-export default certifications;
+export default certificationsData;

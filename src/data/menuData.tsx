@@ -1,4 +1,4 @@
-const menuItems = [
+const menuItemsData = [
      { label: "Home", linkTo: "/" },
      { label: "About", linkTo: "/about" },
      { label: "Projects", linkTo: "/projects" },
@@ -8,4 +8,4 @@ const menuItems = [
      { label: "Education", linkTo: "/education" },
 ];
 
-export default menuItems;
+export default menuItemsData;

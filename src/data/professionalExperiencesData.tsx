@@ -1,4 +1,4 @@
-const experiences = [
+const experiencesData = [
      {
           duration: "2021 — Present",
           jobTitle: "Trust and Safety Wrangler",
@@ -83,4 +83,4 @@ const experiences = [
      },
 ];
 
-export default experiences;
+export default experiencesData;

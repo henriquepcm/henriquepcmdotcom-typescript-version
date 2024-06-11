@@ -1,4 +1,4 @@
-const projects = [
+const projectsData = [
      {
           duration: "2024",
           name: "henriquepcm.com - TypeScript Version",
@@ -50,4 +50,4 @@ const projects = [
      },
 ];
 
-export default projects;
+export default projectsData;

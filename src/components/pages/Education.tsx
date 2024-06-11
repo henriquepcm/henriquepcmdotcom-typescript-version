@@ -1,7 +1,7 @@
 import EducationItem from "../ui/EducationItem";
 import Heading1 from "../ui/Heading1";
 import PageMainContent from "../ui/PageMainContent";
-import colleges from "../../data/educationData";
+import collegesData from "../../data/educationData";
 import { College } from "../../assets/types";
 
 function Education(): JSX.Element {
@@ -11,7 +11,7 @@ function Education(): JSX.Element {
                container="container-education"
           >
                <Heading1 isHome={false}>Education</Heading1>
-               {colleges.map((college: College, index: number) => (
+               {collegesData.map((college: College, index: number) => (
                     <EducationItem
                          key={index}
                          duration={college.duration}

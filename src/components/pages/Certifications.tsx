@@ -1,7 +1,7 @@
 import CertificationItem from "../ui/CertificationItem";
 import Heading1 from "../ui/Heading1";
 import PageMainContent from "../ui/PageMainContent";
-import certifications from "../../data/certificationsData";
+import certificationsData from "../../data/certificationsData";
 import { Certification } from "../../assets/types";
 
 function Certifications(): JSX.Element {
@@ -13,7 +13,7 @@ function Certifications(): JSX.Element {
                container="container-certifications"
           >
                <Heading1 isHome={false}>Certifications</Heading1>
-               {certifications.map(
+               {certificationsData.map(
                     (certification: Certification, index: number) => {
                          const { year } = certification;
                          const showYear = year !== previousYear;
