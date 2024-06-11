@@ -30,7 +30,7 @@ A paginated, responsive, mobile-first professional website built with TypeScript
 -    **React Router Pagination**: Efficiently handles navigation and content loading with React Router, providing a smooth paginated experience.
 -    **Font Awesome Icons**: Enhances the visual appeal with a comprehensive set of icons from Font Awesome, adding clarity and style to the interface.
 -    **Slide-In Menu**: A user-friendly slide-in menu that appears when the burger menu is clicked, improving navigation and user experience.
--    **Footer Links with Engaging Hover-Over Animations**: Interactive footer links that come alive with engaging animations on hover, adding a touch of sophistication.
+-    **Footer Links with Engaging Hover-Over Animations**: Interactive footer links that come alive with engaging animations on hover.
 -    **Cross-Browser Compatibility**: Compatible with all modern browsers, ensuring consistent behavior across platforms.
 
 ## License
