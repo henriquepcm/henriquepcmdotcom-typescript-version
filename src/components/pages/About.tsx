@@ -15,7 +15,7 @@ function About(): JSX.Element {
                     ))}
                     <p>
                          <a
-                              class="font-bold ml-1"
+                              className="font-bold ml-1"
                               href="mailto:henriquepcm@gmail.com"
                          >
                               henriquepcm@gmail.com
