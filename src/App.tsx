@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useMenu } from "./hooks/useMenu";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header, Footer, Menu } from "./components/ui";
@@ -12,21 +11,12 @@ import {
      PageNotFound,
      Certifications,
 } from "./components/pages";
-import ReactGA from "react-ga";
 
-// Google Analytics
-function initializeReactGA() {
-     ReactGA.initialize("G-E01V9872F7");
-     ReactGA.pageview(window.location.pathname + window.location.search);
-}
-initializeReactGA();
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-E01V9872F7");
 
 function App(): JSX.Element {
      const { menuIsOpen, toggleMenu, closeMenu, menuRef } = useMenu();
-
-     useEffect(() => {
-          ReactGA.pageview(window.location.pathname + window.location.search);
-     }, []);
 
      return (
           <>
