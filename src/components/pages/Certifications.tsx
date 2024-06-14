@@ -12,8 +12,8 @@ function Certifications(): JSX.Element {
                containerWrapper="container-wrapper-certifications"
                container="container-certifications"
           >
-               <Heading1 isHome={false}>Certifications</Heading1>
-               {certificationsData.map(
+               <Heading1 isHome={false}>{certificationsData.h1}</Heading1>
+               {certificationsData.certificationsInfo.map(
                     (certification: Certification, index: number) => {
                          const { year } = certification;
                          const showYear = year !== previousYear;

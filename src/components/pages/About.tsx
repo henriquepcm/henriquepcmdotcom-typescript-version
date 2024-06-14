@@ -16,9 +16,9 @@ function About(): JSX.Element {
                     <p>
                          <a
                               className="font-bold ml-1"
-                              href="mailto:henriquepcm@gmail.com"
+                              href={`mailto:${aboutData.email}`}
                          >
-                              henriquepcm@gmail.com
+                              {aboutData.email}
                          </a>
                     </p>
                </div>

@@ -5,6 +5,7 @@ const aboutData = {
           "Development aside, a few topics I am particularly interested in are investments, learning languages, music, and making pizza/burgers.",
           "Am I a good fit for your project? Feel free to drop me a line at the email address below and let's chat about it.",
      ],
+     email: "henriquepcm@gmail.com",
 };
 
 export default aboutData;

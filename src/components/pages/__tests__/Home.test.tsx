@@ -1,6 +1,6 @@
 import { render, RenderResult } from "@testing-library/react";
-import Home from "../Home";
 import homeData from "../../../data/homeData";
+import Home from "../Home";
 
 describe("Home", () => {
      let homeComponent: RenderResult;

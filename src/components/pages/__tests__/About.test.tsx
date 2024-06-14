@@ -1,45 +1,30 @@
-import { render, RenderResult } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import aboutData from "../../../data/aboutData";
 import About from "../About";
 
 describe("About", () => {
-     let aboutComponent: RenderResult;
-     let getByText: RenderResult["getByText"];
-
      beforeEach(() => {
-          aboutComponent = render(<About />);
-          getByText = aboutComponent.getByText;
+          render(<About />);
      });
 
-     it("finds About's H1", () => {
-          const aboutsH1 = getByText("About Henrique Pochmann");
+     it("finds About's H1 title", () => {
+          const aboutsH1 = screen.getByText(aboutData.h1);
           expect(aboutsH1).toBeInTheDocument();
      });
 
-     it("finds first phrase of the first paragraph", () => {
-          const firstP = getByText(
-               /I'm Henrique Pochmann from Porto Alegre\/RS - Brazil \(GMT-3\)/i
-          );
-          expect(firstP).toBeInTheDocument();
+     it("finds all paragraphs on About's text", () => {
+          aboutData.paragraphs.forEach((paragraph: string) => {
+               const paragraphFound = screen.getByText(paragraph);
+               expect(paragraphFound).toBeInTheDocument();
+          });
      });
 
-     it("finds first phrase of the second paragraph", () => {
-          const secondP = getByText(
-               "Development aside, a few topics I am particularly interested in are investments, learning languages, music, and making pizza/burgers."
-          );
-          expect(secondP).toBeInTheDocument();
-     });
-
-     it("finds first phrase of the third paragraph", () => {
-          const thirdP = getByText(/Am I a good fit for your project\?/i);
-          expect(thirdP).toBeInTheDocument();
-     });
-
-     it("finds the email address and checks for the correct link.", () => {
-          const emailLink = getByText("henriquepcm@gmail.com");
+     it("finds the email address and checks for the correct link", () => {
+          const emailLink = screen.getByText(aboutData.email);
           expect(emailLink).toBeInTheDocument();
           expect(emailLink.closest("a")).toHaveAttribute(
                "href",
-               "mailto:henriquepcm@gmail.com"
+               `mailto:${aboutData.email}`
           );
      });
 });

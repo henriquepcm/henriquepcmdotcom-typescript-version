@@ -12,7 +12,10 @@ function CertificationItem({
           <>
                {showYear && <div>{year}</div>}
                <div className="flex">
-                    <div className="vertical-line">
+                    <p
+                         className="vertical-line"
+                         aria-label="Certification Item"
+                    >
                          {link ? (
                               <a
                                    className="link-inline"
@@ -28,7 +31,7 @@ function CertificationItem({
                          ) : (
                               `${title} `
                          )}
-                    </div>
+                    </p>
                </div>
           </>
      );
