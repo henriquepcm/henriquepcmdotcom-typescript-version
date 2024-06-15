@@ -10,10 +10,12 @@ function ProfessionalExperiences(): JSX.Element {
                containerWrapper="container-wrapper-experiences"
                container="container-experiences"
           >
-               <Heading1 isHome={false}>PROFESSIONAL EXPERIENCES</Heading1>
-               {experiencesData.map((experience: Experience, index: number) => (
-                    <ExperienceItem key={index} experience={experience} />
-               ))}
+               <Heading1 isHome={false}>Professional Experiences</Heading1>
+               {experiencesData.experiences.map(
+                    (experience: Experience, index: number) => (
+                         <ExperienceItem key={index} experience={experience} />
+                    )
+               )}
           </PageMainContent>
      );
 }
