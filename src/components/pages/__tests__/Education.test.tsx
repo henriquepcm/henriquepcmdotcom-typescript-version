@@ -7,12 +7,12 @@ describe("Education", () => {
           render(<Education />);
      });
 
-     it("Fids Educations's H1", () => {
+     it("fids Educations's H1", () => {
           const educationsH1 = screen.getByText(educationData.h1);
           expect(educationsH1).toBeInTheDocument();
      });
 
-     it("Check if all colleges were rendered", () => {
+     it("checks if the number of colleges on the screen matches the object data number", () => {
           const colNumberInObject = educationData.colleges.length;
           const colNumberRendered = screen.getAllByLabelText("Education Item");
           expect(colNumberInObject).toBe(colNumberRendered.length);

@@ -9,7 +9,7 @@ function ProjectItem({
      name,
 }: ProjectItemProps): JSX.Element {
      return (
-          <>
+          <div aria-label="Project Item">
                <div>{duration}</div>
                <div className="vertical-line">
                     {link ? (
@@ -29,7 +29,7 @@ function ProjectItem({
                     )}
                     <p className="mb-2">{description}</p>
                </div>
-          </>
+          </div>
      );
 }
 

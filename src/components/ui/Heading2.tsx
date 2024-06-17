@@ -7,7 +7,7 @@ function Heading2({ children, isHome }: HeadingProps): JSX.Element {
                className={`${
                     isHome
                          ? "text-3xl leading-tight text-neutral-500"
-                         : "text-xl mt-10"
+                         : "mt-5 font-bold"
                }`}
           >
                {children}

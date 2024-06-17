@@ -7,19 +7,19 @@ describe("Certifications", () => {
           render(<Certifications />);
      });
 
-     it("Finds Certifications' H1", () => {
+     it("finds Certifications' H1", () => {
           const certificationsH1 = screen.getByText(certificationsData.h1);
           expect(certificationsH1).toBeInTheDocument();
      });
 
-     it("Check if all certifications were rendered", () => {
+     it("checks if the number of certifications on the screen matches the object data number.", () => {
           const certNumbInObject = certificationsData.certificationsInfo.length;
           const certNumbRendered =
                screen.queryAllByLabelText("Certification Item");
           expect(certNumbInObject).toBe(certNumbRendered.length);
      });
 
-     it("Check if the links, for elements with link, are rendering correct", () => {
+     it("check if the links, for elements with link, are rendering correct", () => {
           certificationsData.certificationsInfo.forEach((certificate) => {
                if (certificate.link) {
                     const certLink = screen.getByRole("link", {

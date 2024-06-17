@@ -10,8 +10,8 @@ function Projects(): JSX.Element {
                containerWrapper="container-wrapper-projects"
                container="container-projects"
           >
-               <Heading1 isHome={false}>Projects</Heading1>
-               {projectsData.map((project: Project, index: number) => (
+               <Heading1 isHome={false}>{projectsData.h1}</Heading1>
+               {projectsData.projects.map((project: Project, index: number) => (
                     <ProjectItem
                          key={index}
                          duration={project.duration}

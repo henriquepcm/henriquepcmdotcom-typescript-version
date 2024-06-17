@@ -14,7 +14,7 @@ function ExperienceItem({ experience }: ExperienceItemProps): JSX.Element {
      } = experience;
 
      return (
-          <>
+          <div aria-label="Experince Item">
                <div className="w-full">{duration}</div>
                <div className="vertical-line">
                     <h3 className="text-lg">
@@ -27,7 +27,7 @@ function ExperienceItem({ experience }: ExperienceItemProps): JSX.Element {
                     <p className="mt-5">Skills Applied:</p>
                     <TagList tags={skills} />
                </div>
-          </>
+          </div>
      );
 }
 

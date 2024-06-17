@@ -1,14 +1,37 @@
 const skillsData = {
-     hardSkills: ["React", "JavaScript", "CSS", "HTML", "UI/UX Design"],
-     softSkills: [
-          "Adaptability",
-          "Attention to Detail",
-          "Communication",
-          "Fast-Learner",
+     h1: "Skills, Tools and Languages",
+     skills: [
+          {
+               category: "Hard Skills",
+               items: ["React", "JavaScript", "CSS", "HTML", "UI/UX Design"],
+          },
+          {
+               category: "Soft Skills",
+               items: [
+                    "Adaptability",
+                    "Attention to Detail",
+                    "Communication",
+                    "Fast-Learner",
+               ],
+          },
+          {
+               category: "Complementary Skills",
+               items: ["Design", "PHP", "SEO", "WordPress"],
+          },
+          {
+               category: "Tools",
+               items: [
+                    "Figma",
+                    "Illustrator",
+                    "Photoshop",
+                    "Visual Studio Code",
+               ],
+          },
+          {
+               category: "Languages",
+               items: ["English-Proficient", "Portuguese-Native"],
+          },
      ],
-     compSkills: ["Design", "PHP", "SEO", "WordPress"],
-     tools: ["Figma", "Illustrator", "Photoshop", "Visual Studio Code"],
-     languages: ["English-Proficient", "Portuguese-Native"],
 };
 
 export default skillsData;
