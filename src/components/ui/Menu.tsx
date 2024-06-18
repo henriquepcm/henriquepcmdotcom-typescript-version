@@ -7,6 +7,7 @@ function Menu({ menuIsOpen, toggleMenu, menuRef }: MenuProps): JSX.Element {
      return (
           <>
                <div
+                    data-testid="menu"
                     ref={menuRef}
                     className={`flex fixed inset-y-0 left-0 bg-black w-1/2 md:w-1/4 z-50 duration-300 ${
                          !menuIsOpen ? "-translate-x-full" : ""

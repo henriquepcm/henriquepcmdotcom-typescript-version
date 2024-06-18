@@ -7,7 +7,7 @@ function ButtonBurger({ toggleMenu }: ToggleMenuProps): JSX.Element {
                     <button
                          onClick={toggleMenu}
                          className="w-5 mt-3 ml-2.5 space-y-0.5 delay-100 transition ease-linear hover:scale-90"
-                         aria-label="Opens main menu"
+                         aria-label="Open main menu"
                     >
                          <div>
                               <hr className="border-2 border-black rounded-sm" />

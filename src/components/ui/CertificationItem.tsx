@@ -9,7 +9,7 @@ function CertificationItem({
      showYear,
 }: CertificationItemProps): JSX.Element {
      return (
-          <>
+          <li>
                {showYear && <div>{year}</div>}
                <div className="flex">
                     <p
@@ -33,7 +33,7 @@ function CertificationItem({
                          )}
                     </p>
                </div>
-          </>
+          </li>
      );
 }
 

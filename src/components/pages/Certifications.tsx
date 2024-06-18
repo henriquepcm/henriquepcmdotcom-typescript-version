@@ -13,22 +13,24 @@ function Certifications(): JSX.Element {
                container="container-certifications"
           >
                <Heading1 isHome={false}>{certificationsData.h1}</Heading1>
-               {certificationsData.certificationsInfo.map(
-                    (certification: Certification, index: number) => {
-                         const { year } = certification;
-                         const showYear = year !== previousYear;
-                         previousYear = year;
-                         return (
-                              <CertificationItem
-                                   key={index}
-                                   year={certification.year}
-                                   link={certification.link}
-                                   title={certification.title}
-                                   showYear={showYear}
-                              />
-                         );
-                    }
-               )}
+               <ul>
+                    {certificationsData.certificationsInfo.map(
+                         (certification: Certification, index: number) => {
+                              const { year } = certification;
+                              const showYear = year !== previousYear;
+                              previousYear = year;
+                              return (
+                                   <CertificationItem
+                                        key={index}
+                                        year={certification.year}
+                                        link={certification.link}
+                                        title={certification.title}
+                                        showYear={showYear}
+                                   />
+                              );
+                         }
+                    )}
+               </ul>
           </PageMainContent>
      );
 }
