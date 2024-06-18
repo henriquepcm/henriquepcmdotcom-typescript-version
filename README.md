@@ -2,7 +2,7 @@
 
 ## Description
 
-A paginated, responsive, mobile-first professional website built with TypeScript/React and Tailwind CSS. This project features a clean, uncluttered interface and a slide-in menu that appears upon clicking the burger icon.
+A paginated, responsive, mobile-first professional website built with TypeScript, React, and Tailwind CSS. Unit and integration tests are done with Jest and React Testing Library. This project features a clean, uncluttered interface and a slide-in menu that appears upon clicking the burger icon.
 
 ## Screenshot
 
